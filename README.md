@@ -24,3 +24,30 @@ When we read file using `Streams` we read part of the data, do something with it
 🔴 *Readable Streams and Writable Sreams are most Important*
 
 ![image](https://github.com/sudarsan2k5/Backend/assets/108286640/f5004e00-6a77-4f14-919b-d4a8ee0568f2)
+
+### `Streams in Practice`
+
+* Q. Now lets say that for some reason in our application, we need to read a large text file from the file and then send to the client.
+
+            SO HOW WOULD WE DO THAT 🤔❓.
+
+✅ SOLUTION 1:- 
+
+
+    ```javascript
+    const fs = require('fs');
+    const server = require('http').createServer();
+    
+    server.on('request', (req, res) => {
+        // Solution 1
+        fs.readFile('./index.text', (err, data) => {
+            if(err) console.log("Error");
+            res.end(data);
+        });
+    });
+    
+    server.listen('8000', '127.0.0.1', () => {
+        console.log("Listing......");
+    });
+
+#  hrllo
