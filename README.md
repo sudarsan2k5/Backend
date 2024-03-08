@@ -4,7 +4,7 @@ It's time for backend 🔥.
 
 # Introduction to Streams
 ### What is Sreams:-
-Stram used to process (read and write) data pices by pices(chuks) without completing the whole read or write operation, and therefore without keeping all the data in memory.
+Strams used to process (read and write) data pices by pices(chuks) without completing the whole read or write operation, and therefore without keeping all the data in memory.
 > Ex:- `NETFLIX` `You Tube`
 > 
 When we read file using `Streams` we read part of the data, do something with it, then free our memory and repeat this untile the entire file has been processed.
