@@ -34,7 +34,7 @@ When we read file using `Streams` we read part of the data, do something with it
 ✅ SOLUTION 1:- 
 
 
-    ```javascript
+  ```javascript
     const fs = require('fs');
     const server = require('http').createServer();
     
@@ -49,5 +49,5 @@ When we read file using `Streams` we read part of the data, do something with it
     server.listen('8000', '127.0.0.1', () => {
         console.log("Listing......");
     });
-
-#  hrllo
+```
+#  Hello
